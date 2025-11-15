@@ -62,16 +62,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label4.Location = new System.Drawing.Point(19, 299);
+            this.label4.Location = new System.Drawing.Point(9, 301);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 20);
+            this.label4.Size = new System.Drawing.Size(77, 19);
             this.label4.TabIndex = 99;
-            this.label4.Text = "Contraseña";
+            this.label4.Text = "Contraseña :";
             // 
             // txtContrasenaUs
             // 
+            this.txtContrasenaUs.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtContrasenaUs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtContrasenaUs.Enabled = false;
             this.txtContrasenaUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenaUs.Location = new System.Drawing.Point(127, 299);
@@ -83,16 +85,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.Location = new System.Drawing.Point(36, 243);
+            this.label2.Location = new System.Drawing.Point(9, 243);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(49, 19);
             this.label2.TabIndex = 98;
-            this.label2.Text = "Cargo";
+            this.label2.Text = "Cargo : ";
             // 
             // txtNombreUs
             // 
+            this.txtNombreUs.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtNombreUs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombreUs.Enabled = false;
             this.txtNombreUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUs.Location = new System.Drawing.Point(127, 184);
@@ -102,20 +106,19 @@
             // 
             // btnNuevoUs
             // 
-            this.btnNuevoUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnNuevoUs.BackColor = System.Drawing.Color.Silver;
             this.btnNuevoUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevoUs.FlatAppearance.BorderSize = 0;
             this.btnNuevoUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnNuevoUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoUs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevoUs.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoUs.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoUs.ForeColor = System.Drawing.Color.Black;
             this.btnNuevoUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevoUs.Location = new System.Drawing.Point(327, 480);
             this.btnNuevoUs.Name = "btnNuevoUs";
             this.btnNuevoUs.Size = new System.Drawing.Size(108, 46);
             this.btnNuevoUs.TabIndex = 90;
             this.btnNuevoUs.Text = "NUEVO";
-            this.btnNuevoUs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoUs.UseVisualStyleBackColor = false;
             this.btnNuevoUs.Click += new System.EventHandler(this.btnNuevoUs_Click);
             // 
@@ -123,51 +126,49 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(36, 184);
+            this.label7.Location = new System.Drawing.Point(9, 186);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.Size = new System.Drawing.Size(58, 19);
             this.label7.TabIndex = 96;
-            this.label7.Text = "Nombre";
+            this.label7.Text = "Nombre : ";
             // 
             // btnEliminarUs
             // 
-            this.btnEliminarUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnEliminarUs.BackColor = System.Drawing.Color.Silver;
             this.btnEliminarUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminarUs.Enabled = false;
             this.btnEliminarUs.FlatAppearance.BorderSize = 0;
             this.btnEliminarUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnEliminarUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarUs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarUs.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarUs.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarUs.ForeColor = System.Drawing.Color.Black;
             this.btnEliminarUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminarUs.Location = new System.Drawing.Point(677, 480);
             this.btnEliminarUs.Name = "btnEliminarUs";
             this.btnEliminarUs.Size = new System.Drawing.Size(108, 46);
             this.btnEliminarUs.TabIndex = 92;
             this.btnEliminarUs.Text = "ELIMINAR";
-            this.btnEliminarUs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminarUs.UseVisualStyleBackColor = false;
             this.btnEliminarUs.Click += new System.EventHandler(this.btnEliminarUs_Click);
             // 
             // btnModificarUs
             // 
-            this.btnModificarUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnModificarUs.BackColor = System.Drawing.Color.Silver;
             this.btnModificarUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificarUs.Enabled = false;
             this.btnModificarUs.FlatAppearance.BorderSize = 0;
             this.btnModificarUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnModificarUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarUs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificarUs.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarUs.ForeColor = System.Drawing.Color.White;
+            this.btnModificarUs.ForeColor = System.Drawing.Color.Black;
             this.btnModificarUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificarUs.Location = new System.Drawing.Point(561, 480);
             this.btnModificarUs.Name = "btnModificarUs";
             this.btnModificarUs.Size = new System.Drawing.Size(110, 46);
             this.btnModificarUs.TabIndex = 91;
             this.btnModificarUs.Text = "MODIFICAR";
-            this.btnModificarUs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificarUs.UseVisualStyleBackColor = false;
             this.btnModificarUs.Click += new System.EventHandler(this.btnModificarUs_Click);
             // 
@@ -176,36 +177,37 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Enabled = false;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label3.Location = new System.Drawing.Point(42, 136);
+            this.label3.Location = new System.Drawing.Point(9, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 20);
+            this.label3.Size = new System.Drawing.Size(52, 19);
             this.label3.TabIndex = 94;
-            this.label3.Text = "Codigo";
+            this.label3.Text = "Codigo : ";
             // 
             // btnGuardarUs
             // 
-            this.btnGuardarUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnGuardarUs.BackColor = System.Drawing.Color.Silver;
             this.btnGuardarUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarUs.Enabled = false;
             this.btnGuardarUs.FlatAppearance.BorderSize = 0;
             this.btnGuardarUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnGuardarUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarUs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardarUs.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarUs.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarUs.ForeColor = System.Drawing.Color.Black;
             this.btnGuardarUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarUs.Location = new System.Drawing.Point(444, 480);
             this.btnGuardarUs.Name = "btnGuardarUs";
             this.btnGuardarUs.Size = new System.Drawing.Size(111, 46);
             this.btnGuardarUs.TabIndex = 88;
             this.btnGuardarUs.Text = "GUARDAR";
-            this.btnGuardarUs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardarUs.UseVisualStyleBackColor = false;
             this.btnGuardarUs.Click += new System.EventHandler(this.btnGuardarUs_Click);
             // 
             // txtCodigoUs
             // 
+            this.txtCodigoUs.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtCodigoUs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodigoUs.Enabled = false;
             this.txtCodigoUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoUs.Location = new System.Drawing.Point(127, 136);
@@ -215,34 +217,36 @@
             // 
             // label9
             // 
-            this.label9.BackColor = System.Drawing.Color.Black;
+            this.label9.BackColor = System.Drawing.Color.Silver;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(533, 130);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 26);
             this.label9.TabIndex = 106;
             this.label9.Text = "Contraseña";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.BackColor = System.Drawing.Color.Silver;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(662, 130);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 26);
             this.label6.TabIndex = 105;
             this.label6.Text = "Cargo";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvUsuario
             // 
             this.dgvUsuario.AllowUserToDeleteRows = false;
             this.dgvUsuario.AllowUserToResizeColumns = false;
             this.dgvUsuario.AllowUserToResizeRows = false;
-            this.dgvUsuario.BackgroundColor = System.Drawing.Color.AntiqueWhite;
+            this.dgvUsuario.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuario.ColumnHeadersVisible = false;
             this.dgvUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -300,45 +304,48 @@
             // 
             // label12
             // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label12.BackColor = System.Drawing.Color.Silver;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(326, 130);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(206, 26);
             this.label12.TabIndex = 103;
             this.label12.Text = "Nombre";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnBuscarUs
             // 
-            this.btnBuscarUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnBuscarUs.BackColor = System.Drawing.Color.Silver;
             this.btnBuscarUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarUs.FlatAppearance.BorderSize = 0;
             this.btnBuscarUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnBuscarUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarUs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscarUs.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarUs.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarUs.ForeColor = System.Drawing.Color.Black;
             this.btnBuscarUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarUs.Location = new System.Drawing.Point(678, 61);
+            this.btnBuscarUs.Location = new System.Drawing.Point(330, 66);
             this.btnBuscarUs.Name = "btnBuscarUs";
-            this.btnBuscarUs.Size = new System.Drawing.Size(108, 36);
+            this.btnBuscarUs.Size = new System.Drawing.Size(108, 31);
             this.btnBuscarUs.TabIndex = 102;
             this.btnBuscarUs.Text = "BUSCAR";
-            this.btnBuscarUs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarUs.UseVisualStyleBackColor = false;
             // 
             // txtBuscarUs
             // 
+            this.txtBuscarUs.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtBuscarUs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscarUs.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarUs.Location = new System.Drawing.Point(88, 66);
+            this.txtBuscarUs.Location = new System.Drawing.Point(444, 66);
             this.txtBuscarUs.Multiline = true;
             this.txtBuscarUs.Name = "txtBuscarUs";
-            this.txtBuscarUs.Size = new System.Drawing.Size(584, 31);
+            this.txtBuscarUs.Size = new System.Drawing.Size(342, 31);
             this.txtBuscarUs.TabIndex = 101;
             // 
             // txtCargoUs
             // 
+            this.txtCargoUs.BackColor = System.Drawing.Color.Gainsboro;
             this.txtCargoUs.Enabled = false;
             this.txtCargoUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCargoUs.FormattingEnabled = true;
@@ -355,19 +362,19 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(19, 9);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 54);
+            this.label1.Size = new System.Drawing.Size(283, 45);
             this.label1.TabIndex = 107;
-            this.label1.Text = "Registro De Usuarios";
+            this.label1.Text = "Administrar Usuarios ";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 610);
+            this.panel1.Location = new System.Drawing.Point(0, 556);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(889, 17);
             this.panel1.TabIndex = 108;
@@ -378,15 +385,15 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(874, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(15, 610);
+            this.panel2.Size = new System.Drawing.Size(15, 556);
             this.panel2.TabIndex = 109;
             // 
             // Frm_usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(889, 627);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(889, 573);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);

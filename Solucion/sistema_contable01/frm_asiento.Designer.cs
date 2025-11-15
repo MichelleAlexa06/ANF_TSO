@@ -88,7 +88,7 @@
             // 
             this.dgvplan.AllowUserToAddRows = false;
             this.dgvplan.AllowUserToDeleteRows = false;
-            this.dgvplan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgvplan.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvplan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvplan.Location = new System.Drawing.Point(610, 64);
             this.dgvplan.Name = "dgvplan";
@@ -140,6 +140,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "REGISTRAR ASIENTO";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
             // 
             // conbempresa
@@ -165,6 +166,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(251, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 13);
@@ -174,6 +176,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(28, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
@@ -183,6 +186,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(34, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
@@ -192,6 +196,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(34, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
@@ -201,30 +206,32 @@
             // chb_Imprimir_as
             // 
             this.chb_Imprimir_as.AutoSize = true;
-            this.chb_Imprimir_as.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.chb_Imprimir_as.BackColor = System.Drawing.Color.Gainsboro;
             this.chb_Imprimir_as.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chb_Imprimir_as.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.chb_Imprimir_as.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chb_Imprimir_as.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chb_Imprimir_as.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chb_Imprimir_as.ForeColor = System.Drawing.Color.Black;
             this.chb_Imprimir_as.Location = new System.Drawing.Point(13, 560);
             this.chb_Imprimir_as.Name = "chb_Imprimir_as";
-            this.chb_Imprimir_as.Size = new System.Drawing.Size(142, 21);
+            this.chb_Imprimir_as.Size = new System.Drawing.Size(145, 22);
             this.chb_Imprimir_as.TabIndex = 31;
             this.chb_Imprimir_as.Text = "Imprimir asiento";
-            this.chb_Imprimir_as.UseVisualStyleBackColor = true;
+            this.chb_Imprimir_as.UseVisualStyleBackColor = false;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackColor = System.Drawing.Color.Green;
+            this.btnNuevo.BackColor = System.Drawing.Color.Silver;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo.ForeColor = System.Drawing.Color.Black;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(216, 509);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(102, 45);
+            this.btnNuevo.Size = new System.Drawing.Size(102, 26);
             this.btnNuevo.TabIndex = 29;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = false;
@@ -232,17 +239,17 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnGuardar.BackColor = System.Drawing.Color.Silver;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(2, 509);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(102, 45);
+            this.btnGuardar.Size = new System.Drawing.Size(102, 26);
             this.btnGuardar.TabIndex = 28;
             this.btnGuardar.Text = "REGISTRAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -251,10 +258,11 @@
             // 
             // txtTotal_haber
             // 
-            this.txtTotal_haber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtTotal_haber.BackColor = System.Drawing.Color.Silver;
             this.txtTotal_haber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotal_haber.Enabled = false;
             this.txtTotal_haber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold);
+            this.txtTotal_haber.ForeColor = System.Drawing.Color.Black;
             this.txtTotal_haber.Location = new System.Drawing.Point(460, 509);
             this.txtTotal_haber.Name = "txtTotal_haber";
             this.txtTotal_haber.Size = new System.Drawing.Size(120, 26);
@@ -262,10 +270,11 @@
             // 
             // txtTotal_debe
             // 
-            this.txtTotal_debe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtTotal_debe.BackColor = System.Drawing.Color.Silver;
             this.txtTotal_debe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotal_debe.Enabled = false;
             this.txtTotal_debe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold);
+            this.txtTotal_debe.ForeColor = System.Drawing.Color.Black;
             this.txtTotal_debe.Location = new System.Drawing.Point(324, 509);
             this.txtTotal_debe.Name = "txtTotal_debe";
             this.txtTotal_debe.Size = new System.Drawing.Size(128, 26);
@@ -281,13 +290,14 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.Silver;
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Location = new System.Drawing.Point(110, 509);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 45);
+            this.btnEliminar.Size = new System.Drawing.Size(100, 26);
             this.btnEliminar.TabIndex = 25;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -295,16 +305,16 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackColor = System.Drawing.Color.LightGray;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(460, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 32);
@@ -327,7 +337,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_asiento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_asiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgv_asiento.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgv_asiento.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
@@ -420,7 +430,7 @@
             // 
             // tp_lista_libro
             // 
-            this.tp_lista_libro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tp_lista_libro.BackColor = System.Drawing.Color.Gainsboro;
             this.tp_lista_libro.Controls.Add(this.dgv_lista_libro);
             this.tp_lista_libro.Location = new System.Drawing.Point(4, 22);
             this.tp_lista_libro.Name = "tp_lista_libro";
@@ -436,7 +446,7 @@
             this.dgv_lista_libro.AllowUserToDeleteRows = false;
             this.dgv_lista_libro.AllowUserToResizeColumns = false;
             this.dgv_lista_libro.AllowUserToResizeRows = false;
-            this.dgv_lista_libro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgv_lista_libro.BackgroundColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
@@ -529,6 +539,8 @@
             // 
             // txtbuscar1
             // 
+            this.txtbuscar1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtbuscar1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbuscar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbuscar1.Location = new System.Drawing.Point(665, 30);
             this.txtbuscar1.Name = "txtbuscar1";
@@ -584,7 +596,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1006, 665);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

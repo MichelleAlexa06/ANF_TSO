@@ -501,6 +501,11 @@ namespace sistema_contable01
 
         }
 
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnNuevo_Click1(object sender, EventArgs e)
         {
             limpiar_todo();

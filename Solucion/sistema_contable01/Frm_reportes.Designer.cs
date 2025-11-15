@@ -46,7 +46,7 @@
             // 
             // btn_libro_diario
             // 
-            this.btn_libro_diario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_libro_diario.BackColor = System.Drawing.Color.Silver;
             this.btn_libro_diario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_libro_diario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_libro_diario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -61,7 +61,7 @@
             // 
             // btn_libro_may_b
             // 
-            this.btn_libro_may_b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_libro_may_b.BackColor = System.Drawing.Color.Silver;
             this.btn_libro_may_b.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_libro_may_b.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_libro_may_b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -76,7 +76,7 @@
             // 
             // bn_libro_may_f
             // 
-            this.bn_libro_may_f.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.bn_libro_may_f.BackColor = System.Drawing.Color.Silver;
             this.bn_libro_may_f.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bn_libro_may_f.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bn_libro_may_f.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -91,7 +91,7 @@
             // 
             // btn_suma_saldo
             // 
-            this.btn_suma_saldo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_suma_saldo.BackColor = System.Drawing.Color.Silver;
             this.btn_suma_saldo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_suma_saldo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_suma_saldo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -106,7 +106,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.btn_libro_diario);
             this.panel1.Controls.Add(this.btn_suma_saldo);
             this.panel1.Controls.Add(this.btn_libro_may_b);
@@ -130,6 +130,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Silver;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::sistema_contable01.Properties.Resources.search_find_locate;
             this.pictureBox3.Location = new System.Drawing.Point(229, 0);
@@ -141,6 +142,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Silver;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox2.Image = global::sistema_contable01.Properties.Resources.financialreport;
             this.pictureBox2.Location = new System.Drawing.Point(422, 0);
@@ -152,6 +154,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Silver;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = global::sistema_contable01.Properties.Resources.document;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -165,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(642, 357);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

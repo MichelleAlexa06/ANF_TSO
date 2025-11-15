@@ -70,11 +70,13 @@
             this.repot_asiento_fecha.LocalReport.ReportEmbeddedResource = "sistema_contable01.Report_asiento_fecha.rdlc";
             this.repot_asiento_fecha.Location = new System.Drawing.Point(0, 0);
             this.repot_asiento_fecha.Name = "repot_asiento_fecha";
+            this.repot_asiento_fecha.ServerReport.BearerToken = null;
             this.repot_asiento_fecha.Size = new System.Drawing.Size(838, 416);
             this.repot_asiento_fecha.TabIndex = 0;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.dtp_fecha2);
             this.panel1.Controls.Add(this.dtp_fecha1);
             this.panel1.Controls.Add(this.btn_mostrar);
@@ -106,10 +108,10 @@
             // 
             // btn_mostrar
             // 
-            this.btn_mostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_mostrar.BackColor = System.Drawing.Color.Silver;
             this.btn_mostrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_mostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_mostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mostrar.Location = new System.Drawing.Point(545, 12);
             this.btn_mostrar.Name = "btn_mostrar";
@@ -141,6 +143,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.repot_asiento_fecha);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 63);

@@ -63,6 +63,7 @@ namespace sistema_contable01
             this.Report_asiento_conta.LocalReport.ReportEmbeddedResource = "sistema_contable01.Imprimir_libro.rdlc";
             this.Report_asiento_conta.Location = new System.Drawing.Point(0, 0);
             this.Report_asiento_conta.Name = "Report_asiento_conta";
+            this.Report_asiento_conta.ServerReport.BearerToken = null;
             this.Report_asiento_conta.Size = new System.Drawing.Size(715, 423);
             this.Report_asiento_conta.TabIndex = 0;
             // 
@@ -74,8 +75,10 @@ namespace sistema_contable01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(715, 423);
             this.Controls.Add(this.Report_asiento_conta);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_imp_libro_report";
             this.Text = "ASIENTO CONTABLE";

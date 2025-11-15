@@ -35,6 +35,5 @@ namespace sistema_contable01
             Rport_libro_may_fecha.LocalReport.DataSources[0].Value = ds.Tables[0];
 
             this.Rport_libro_may_fecha.RefreshReport();
-        }
-    }
+        }    }
 }

@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.libro_mayor_fechaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Datos_Reportes = new sistema_contable01.Datos_Reportes();
             this.Panel_arriba = new System.Windows.Forms.Panel();
             this.btn_buscar_lb_mayor = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,18 +40,26 @@
             this.dtp_fecha1 = new System.Windows.Forms.DateTimePicker();
             this.Panel_centro = new System.Windows.Forms.Panel();
             this.Rport_libro_may_fecha = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Datos_Reportes = new sistema_contable01.Datos_Reportes();
-            this.libro_mayor_fechaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.libro_mayor_fechaTableAdapter = new sistema_contable01.Datos_ReportesTableAdapters.libro_mayor_fechaTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.libro_mayor_fechaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).BeginInit();
             this.Panel_arriba.SuspendLayout();
             this.Panel_centro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libro_mayor_fechaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // libro_mayor_fechaBindingSource
+            // 
+            this.libro_mayor_fechaBindingSource.DataMember = "libro_mayor_fecha";
+            this.libro_mayor_fechaBindingSource.DataSource = this.Datos_Reportes;
+            // 
+            // Datos_Reportes
+            // 
+            this.Datos_Reportes.DataSetName = "Datos_Reportes";
+            this.Datos_Reportes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Panel_arriba
             // 
-            this.Panel_arriba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Panel_arriba.BackColor = System.Drawing.Color.Gainsboro;
             this.Panel_arriba.Controls.Add(this.btn_buscar_lb_mayor);
             this.Panel_arriba.Controls.Add(this.label2);
             this.Panel_arriba.Controls.Add(this.label1);
@@ -63,8 +73,8 @@
             // 
             // btn_buscar_lb_mayor
             // 
-            this.btn_buscar_lb_mayor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_buscar_lb_mayor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar_lb_mayor.BackColor = System.Drawing.Color.Silver;
+            this.btn_buscar_lb_mayor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_buscar_lb_mayor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar_lb_mayor.Location = new System.Drawing.Point(553, 18);
             this.btn_buscar_lb_mayor.Name = "btn_buscar_lb_mayor";
@@ -96,6 +106,8 @@
             // 
             // dtp_fecha2
             // 
+            this.dtp_fecha2.CalendarMonthBackground = System.Drawing.Color.Gainsboro;
+            this.dtp_fecha2.CalendarTitleBackColor = System.Drawing.Color.Silver;
             this.dtp_fecha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_fecha2.Location = new System.Drawing.Point(389, 24);
@@ -105,6 +117,8 @@
             // 
             // dtp_fecha1
             // 
+            this.dtp_fecha1.CalendarMonthBackground = System.Drawing.Color.Gainsboro;
+            this.dtp_fecha1.CalendarTitleBackColor = System.Drawing.Color.Silver;
             this.dtp_fecha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_fecha1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_fecha1.Location = new System.Drawing.Point(199, 24);
@@ -114,6 +128,7 @@
             // 
             // Panel_centro
             // 
+            this.Panel_centro.BackColor = System.Drawing.Color.Gainsboro;
             this.Panel_centro.Controls.Add(this.Rport_libro_may_fecha);
             this.Panel_centro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_centro.Location = new System.Drawing.Point(0, 75);
@@ -124,24 +139,15 @@
             // Rport_libro_may_fecha
             // 
             this.Rport_libro_may_fecha.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.libro_mayor_fechaBindingSource;
-            this.Rport_libro_may_fecha.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource3.Name = "DataSet1";
+            reportDataSource3.Value = this.libro_mayor_fechaBindingSource;
+            this.Rport_libro_may_fecha.LocalReport.DataSources.Add(reportDataSource3);
             this.Rport_libro_may_fecha.LocalReport.ReportEmbeddedResource = "sistema_contable01.RP_lib_mayor_fecha.rdlc";
             this.Rport_libro_may_fecha.Location = new System.Drawing.Point(0, 0);
             this.Rport_libro_may_fecha.Name = "Rport_libro_may_fecha";
+            this.Rport_libro_may_fecha.ServerReport.BearerToken = null;
             this.Rport_libro_may_fecha.Size = new System.Drawing.Size(863, 417);
             this.Rport_libro_may_fecha.TabIndex = 0;
-            // 
-            // Datos_Reportes
-            // 
-            this.Datos_Reportes.DataSetName = "Datos_Reportes";
-            this.Datos_Reportes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // libro_mayor_fechaBindingSource
-            // 
-            this.libro_mayor_fechaBindingSource.DataMember = "libro_mayor_fecha";
-            this.libro_mayor_fechaBindingSource.DataSource = this.Datos_Reportes;
             // 
             // libro_mayor_fechaTableAdapter
             // 
@@ -157,11 +163,11 @@
             this.Name = "Frm_libro_mayor_fecha";
             this.Text = "LIBRO MAYOR";
             this.Load += new System.EventHandler(this.Frm_libro_mayor_fecha_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.libro_mayor_fechaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).EndInit();
             this.Panel_arriba.ResumeLayout(false);
             this.Panel_arriba.PerformLayout();
             this.Panel_centro.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libro_mayor_fechaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

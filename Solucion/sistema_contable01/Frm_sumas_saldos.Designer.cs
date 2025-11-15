@@ -30,22 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.Suma_saldoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Datos_Reportes = new sistema_contable01.Datos_Reportes();
             this.Rp_suma_saldo = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dtp_fecha1 = new System.Windows.Forms.DateTimePicker();
-            this.dtp_fecha2 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btn_mostrar = new System.Windows.Forms.Button();
-            this.Datos_Reportes = new sistema_contable01.Datos_Reportes();
-            this.Suma_saldoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtp_fecha2 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_fecha1 = new System.Windows.Forms.DateTimePicker();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Suma_saldoTableAdapter = new sistema_contable01.Datos_ReportesTableAdapters.Suma_saldoTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.Suma_saldoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Suma_saldoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Suma_saldoBindingSource
+            // 
+            this.Suma_saldoBindingSource.DataMember = "Suma_saldo";
+            this.Suma_saldoBindingSource.DataSource = this.Datos_Reportes;
+            // 
+            // Datos_Reportes
+            // 
+            this.Datos_Reportes.DataSetName = "Datos_Reportes";
+            this.Datos_Reportes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Rp_suma_saldo
             // 
@@ -56,12 +66,13 @@
             this.Rp_suma_saldo.LocalReport.ReportEmbeddedResource = "sistema_contable01.Report_Suma_saldo.rdlc";
             this.Rp_suma_saldo.Location = new System.Drawing.Point(0, 0);
             this.Rp_suma_saldo.Name = "Rp_suma_saldo";
+            this.Rp_suma_saldo.ServerReport.BearerToken = null;
             this.Rp_suma_saldo.Size = new System.Drawing.Size(833, 426);
             this.Rp_suma_saldo.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.btn_mostrar);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -73,56 +84,9 @@
             this.panel1.Size = new System.Drawing.Size(833, 69);
             this.panel1.TabIndex = 1;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Rp_suma_saldo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 69);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(833, 426);
-            this.panel2.TabIndex = 2;
-            // 
-            // dtp_fecha1
-            // 
-            this.dtp_fecha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_fecha1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fecha1.Location = new System.Drawing.Point(178, 28);
-            this.dtp_fecha1.Name = "dtp_fecha1";
-            this.dtp_fecha1.Size = new System.Drawing.Size(107, 23);
-            this.dtp_fecha1.TabIndex = 0;
-            // 
-            // dtp_fecha2
-            // 
-            this.dtp_fecha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fecha2.Location = new System.Drawing.Point(358, 28);
-            this.dtp_fecha2.Name = "dtp_fecha2";
-            this.dtp_fecha2.Size = new System.Drawing.Size(107, 23);
-            this.dtp_fecha2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(107, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "DESDE";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(291, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "HASTA";
-            // 
             // btn_mostrar
             // 
-            this.btn_mostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_mostrar.BackColor = System.Drawing.Color.Silver;
             this.btn_mostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,15 +98,52 @@
             this.btn_mostrar.UseVisualStyleBackColor = false;
             this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
             // 
-            // Datos_Reportes
+            // label2
             // 
-            this.Datos_Reportes.DataSetName = "Datos_Reportes";
-            this.Datos_Reportes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(291, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "HASTA";
             // 
-            // Suma_saldoBindingSource
+            // label1
             // 
-            this.Suma_saldoBindingSource.DataMember = "Suma_saldo";
-            this.Suma_saldoBindingSource.DataSource = this.Datos_Reportes;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(107, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "DESDE";
+            // 
+            // dtp_fecha2
+            // 
+            this.dtp_fecha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_fecha2.Location = new System.Drawing.Point(358, 28);
+            this.dtp_fecha2.Name = "dtp_fecha2";
+            this.dtp_fecha2.Size = new System.Drawing.Size(107, 23);
+            this.dtp_fecha2.TabIndex = 1;
+            // 
+            // dtp_fecha1
+            // 
+            this.dtp_fecha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fecha1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_fecha1.Location = new System.Drawing.Point(178, 28);
+            this.dtp_fecha1.Name = "dtp_fecha1";
+            this.dtp_fecha1.Size = new System.Drawing.Size(107, 23);
+            this.dtp_fecha1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Rp_suma_saldo);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 69);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(833, 426);
+            this.panel2.TabIndex = 2;
             // 
             // Suma_saldoTableAdapter
             // 
@@ -158,11 +159,11 @@
             this.Name = "Frm_sumas_saldos";
             this.Text = "SUMAS Y SALDOS";
             this.Load += new System.EventHandler(this.Frm_sumas_saldos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Suma_saldoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Datos_Reportes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Suma_saldoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
