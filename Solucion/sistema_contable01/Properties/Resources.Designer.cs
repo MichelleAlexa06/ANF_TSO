@@ -209,5 +209,15 @@ namespace sistema_contable01.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_11_13_at_2_57_43_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-11-13 at 2.57.43 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

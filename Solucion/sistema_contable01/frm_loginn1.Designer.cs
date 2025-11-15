@@ -1,4 +1,7 @@
-﻿namespace sistema_contable01
+﻿
+using BunifuAnimatorNS;
+
+namespace sistema_contable01
 {
     partial class frm_loginn1
     {

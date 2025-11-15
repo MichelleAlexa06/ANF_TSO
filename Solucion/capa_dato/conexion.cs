@@ -24,9 +24,9 @@ namespace capa_dato
            
             servidor = "PC";//nombre de su motor de base de datos si su motor 
             //de base de datos es asi ejenplo(USUARIO -PC\SQLEXPRESS) i les sale error aumentarle una barra(USUARIO-PC\\SQLEXPRESS)
-            usuario = "cardenas";//el nombre de usuario que crean en su base de datos
-            contraseña = "123456";//la cotrasenadel usuario
-            nombreBD = "sistema_conta13";//nombre de la base de datos
+            usuario = "if0_39903381";//el nombre de usuario que crean en su base de datos
+            contraseña = "fYzFQCTA5mOH8";//la cotrasenadel usuario
+            nombreBD = "if0_39903381_db_tso";//nombre de la base de datos
             cmd = new SqlCommand();
         }
 

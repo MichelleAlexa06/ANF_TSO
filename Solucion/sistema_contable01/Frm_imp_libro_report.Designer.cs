@@ -1,4 +1,9 @@
-﻿namespace sistema_contable01
+﻿using Microsoft.Reporting.WinForms;
+
+
+namespace sistema_contable01
+
+
 {
     partial class Frm_imp_libro_report
     {
